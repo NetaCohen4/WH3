@@ -6,6 +6,7 @@ WH3
 */
 
 #include <stdio.h>
+#include <string.h>
 
 #define ARR_SIZE 50
 
@@ -29,7 +30,7 @@ void insertion_sort(int *arr, int len)
           while (*(arr+j) < temp && j < i){
             j++;
           }
-            shift_element(arr+j, i-j);
+            shift_elements(arr+j, i-j);
             *(arr+j) = temp;
      }
 }
